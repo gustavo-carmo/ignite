@@ -2,7 +2,7 @@ export async function json(request, response) {
     const buffers = [];
 
     for await (const chunck of request) {
-        buffers.push(chunck)
+        buffers.push(chunck);
     }
 
     try {
@@ -11,5 +11,5 @@ export async function json(request, response) {
         request.body = null;
     }
 
-    response.setHeader('Content-type', 'application/json')
+    response.setHeader('Content-type', 'application/json');
 }

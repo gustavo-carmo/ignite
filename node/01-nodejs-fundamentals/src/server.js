@@ -19,9 +19,6 @@ const server = http.createServer(async (request, response) => {
         request.params = params;
         request.query = query ? extractQueryParams(query) : {};
 
-        console.log(request.params);
-        console.log(request.query);
-
         return route.handler(request, response);
     }
 
