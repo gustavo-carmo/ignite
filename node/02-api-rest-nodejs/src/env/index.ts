@@ -15,5 +15,4 @@ if (_env.success === false) {
   throw new Error('⚠️ Invalid envoriment variables!')
 }
 
-console.log(_env.data)
 export const env = _env.data
