@@ -1,3 +1,4 @@
-/db/app.db
+/db/*.db
+build
 .env
 .env.test
